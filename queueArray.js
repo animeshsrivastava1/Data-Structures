@@ -2,6 +2,7 @@ class Queue{
     arr;
     front;
     cap;
+    size;
 
     constructor(cap)
     {
