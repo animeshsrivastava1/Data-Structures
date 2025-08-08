@@ -28,12 +28,12 @@ class Graph{
 
 BFS(start)
 {
-    // console.log(this.graphList[start])
+    
     let visited = {}; //as a queue
     let q = [];
     q.push(start)
     visited[start] = true
-    // console.log(start)
+
   while(q.length>0)
   {
   
