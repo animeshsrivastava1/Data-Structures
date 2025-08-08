@@ -26,6 +26,36 @@ class Graph{
 }
 
 
+BFS(start)
+{
+    // console.log(this.graphList[start])
+    let visited = {}; //as a queue
+    let q = [];
+    q.push(start)
+    visited[start] = true
+    // console.log(start)
+  while(q.length>0)
+  {
+  
+    let curr = q.shift();
+    console.log(curr);
+    for(let i = 0; i< this.graphList[curr].length;i++)
+    {
+        let currItem = this.graphList[curr][i]
+
+        if(visited[currItem]==undefined)
+        {
+            visited[currItem] = true; 
+            q.push(currItem)
+        }
+        
+    }
+    
+  }
+
+}
+
+
 
 dfsUtil(start,visited)
 {
@@ -83,5 +113,5 @@ gr.addEdge(3,1);
 gr.addEdge(2,0);
 
 // gr.removeEdge(10)
-gr.dfsPrint(0)
+gr.BFS(0)
 // gr.printGraph();
