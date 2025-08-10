@@ -83,5 +83,5 @@ let trie  = new Trie();
 trie.insert('apple');
 trie.insert('bag');
 trie.print()
-/
+
 console.log(trie.search('apple'))
